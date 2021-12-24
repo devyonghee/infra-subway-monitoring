@@ -1,6 +1,7 @@
 package nextstep.subway.auth.domain;
 
 public class LoginMember {
+
     private Long id;
     private String email;
     private Integer age;
@@ -21,5 +22,13 @@ public class LoginMember {
 
     public Integer getAge() {
         return age;
+    }
+
+    @Override
+    public String toString() {
+        return "LoginMember{" +
+            "id=" + id +
+            ", age=" + age +
+            '}';
     }
 }
